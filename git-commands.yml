@@ -12,3 +12,7 @@ git remote add origin https://github.com/edbr/edwardo.git
 git branch -M main
 git push -u origin main
 
+#Push
+git add .
+git commit -m "v1.11"
+git push origin main
