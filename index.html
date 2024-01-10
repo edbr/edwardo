@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 
 <link href="components/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -185,23 +187,37 @@
   </header>
 
   <main>
-    <h1 class="text-body-emphasis">Edwardo</h1>
-    <h3 class="fs-5 col-md-8 text-body-emphasis">Product Design, California</h3>
-    <p class="fs-5 col-md-8">I'm an experienced individual contributor designer with over a decade of expertise in Silicon Valley startups.</p>
-    <p class="fs-5 col-md-8">Originally hailing from the business, education, and service hub of Southeast Brazil, I ventured to California for college and have joyfully called it home for the past two decades.</p>
 
-    <div class="row g-5">
-    <div class="col-md-3 mb-5">
-      <a href="projects-signin.html" class="btn btn-primary btn-lg px-4">See projects</a>
-    </div>
-    <div class="col-md-4 mb-5">
-      <a href="mailto:edbelluti@gmail.com" class="btn btn-secondary btn-lg px-4">Let's connect</a>
-    </div>
+    <div class="container animate__animated animate__fadeInUp">
+      <div class="row">
+          <div class="col-md-8">
+              <h1 class="text-body-emphasis">Edwardo</h1>
+              <h3 class="fs-5 text-body-emphasis">Product Design, California</h3>
+              <p class="fs-5">I'm an experienced individual contributor designer with over a decade of expertise in Silicon Valley startups.</p>
+              <p class="fs-5">Originally hailing from the business, education, and service hub of Southeast Brazil, I ventured to California for college and have joyfully called it home for the past two decades.</p>
+          </div>
+          <div class="col-md-3">
+              <!-- Your image goes here -->
+              <img src="images/profile-2.png" alt="Edwardo's Image" class="img-fluid rounded shadow-lg w-100 d-md-none">
+              <!-- Smaller image for mobile screens -->
+              <img src="images/profile-2.png" alt="Edwardo's Image" class="img-fluid rounded shadow-lg d-none d-sm-block w-35">
+          </div>
+      </div>
+      
+      <div class="row g-3 g-md-5">
+        <div class="col-md-3 mb-3 mb-md-2">
+            <a href="projects-signin.html" class="btn btn-primary btn-lg px-4 d-block">Projects</a>
+        </div>
+        <div class="col-md-4">
+            <a href="mailto:edbelluti@gmail.com" class="btn btn-secondary btn-lg px-4 d-block">Let's connect</a>
+        </div>
+      </div>
   </div>
+  
 
-    <hr class="col-3 col-md-2 mb-5">
+    <hr class="col-8 col-md-2 mb-5 animate__animated animate__fadeInUp">
 
-    <div class="row g-5">
+    <div class="row g-5 animate__animated animate__fadeInUp">
       <div class="col-md-6 ">
         <h2 class="text-body-emphasis">Experience</h2>
         <p>Over the past two years, I have had the privilege of being a key member of an exceptional team committed to revolutionizing healthcare. Our focus has been on establishing an innovative remote pulmonology clinic, enriched with an AI overnight monitoring component.</p>
@@ -277,6 +293,7 @@
   </footer>
 </div>
 <script src="components/assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="animate.js"></script>
 
     </body>
 </html>
