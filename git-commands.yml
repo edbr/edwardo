@@ -14,5 +14,5 @@ git push -u origin main
 
 #Push
 git add .
-git commit -m "v1.165 removed smaller image for mobile"
+git commit -m "v1.16.1 rimagine dissapeared, resubmit"
 git push origin main
