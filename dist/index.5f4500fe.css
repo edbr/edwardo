@@ -40,7 +40,7 @@
 
 .device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"]:after {
   content: "";
-  background-image: url("portrait_black.8b2115df.png");
+  background-image: url("portrait_black.dc8e9805.png");
 }
 
 .device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] .button {
@@ -308,4 +308,4 @@ footer a:hover, footer a:active, footer a:focus {
   }
 }
 
-/*# sourceMappingURL=index.6f06e5da.css.map */
+/*# sourceMappingURL=index.5f4500fe.css.map */
