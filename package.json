@@ -4,7 +4,14 @@
   "description": "",
   "source": "./src/docs/index.html",
   "scripts": {
-    "dev": "parcel"
+    "dev": "parcel",
+
+      "start": "parcel ./src/docs/index.html",
+      "prebuild-dev": "shx rm -rf dist/*",
+      "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
+      "prebuild": "shx rm -rf dist/*",
+      "build": "parcel build ./src/docs/index.html --public-url ./",
+      "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "repository": {
     "type": "git",
@@ -24,6 +31,11 @@
   "dependencies": {
     "@parcel/core": "^2.11.0",
     "bootstrap": "^5.3.2",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+
+    "shx": "^0.3.2"
+
   }
+
 }
+
