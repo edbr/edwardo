@@ -2,16 +2,16 @@
   "name": "2024_edbr-parcel",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.html",
+  "source": "./src/index.html",
   "scripts": {
     "dev": "parcel",
 
       "start": "parcel ./src/index.html",
-      "prebuild-dev": "shx rm -rf ./dist/*",
-      "build-dev": "parcel build ./src/index.html --public-url ./",
-      "prebuild": "shx rm -rf ./dist/*",
-      "build": "parcel build ./src/index.html --public-url ./",
-      "push-gh-pages": "push-dir --dir=./dist --branch=gh-pages --cleanup --verbose"
+      "prebuild-dev": "shx rm -rf dist/*",
+      "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
+      "prebuild": "shx rm -rf dist/*",
+      "build": "parcel build ./src/docs/index.html --public-url ./",
+      "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "repository": {
     "type": "git",
@@ -26,12 +26,15 @@
   "homepage": "https://github.com/edbr/edwardo#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
-    "parcel": "^2.11.0",
-    "shx": "^0.3.2"
+    "parcel": "^2.11.0"
   },
   "dependencies": {
+    "@parcel/core": "^2.11.0",
     "bootstrap": "^5.3.2",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+
+    "shx": "^0.3.2"
+
   }
 
 }
