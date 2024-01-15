@@ -2,7 +2,7 @@
   "name": "2024_edbr-parcel",
   "version": "1.0.0",
   "description": "",
-  "source": ".docs/src/index.html",
+  "source": "./docs/src/index.html",
   "scripts": {
     "dev": "parcel",
 
