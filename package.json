@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "source": "./src/index.html",
-  
   "scripts": {
     "start": "parcel ./src/index.html",
     "prebuild-dev": "shx rm -rf dist/*",
@@ -24,6 +23,9 @@
   },
   "homepage": "https://github.com/edbr/edwardo#readme",
   "devDependencies": {
+    "cssnano": "^6.0.3",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.7",
     "shx": "^0.3.2"
   },
   "dependencies": {
